@@ -9704,3 +9704,133 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+    .skill-card-glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  border-radius: 20px;
+  padding: 25px;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.skill-card-glass:hover {
+  transform: scale(1.03);
+  border: 1px solid rgba(146, 86, 255, 0.4);
+  box-shadow: 0 0 20px rgba(167, 139, 250, 0.3);
+}
+
+.skill-card-glass h4 {
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #facc15;
+}
+
+.skill-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-icons span {
+  background: #1f2937;
+  padding: 8px 14px;
+  border-radius: 12px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  transition: background 0.3s ease;
+  color: #cbd5e1;
+}
+
+.skill-icons span:hover {
+  background: #9333ea;
+  color: #fff;
+}
+
+.skill-icons img {
+  width: 22px;
+  height: 22px;
+}
+.timeline-section {
+  background: transparent;
+  color: white;
+  position: relative;
+}
+
+.timeline {
+  position: relative;
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px 0;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 4px;
+  background-color: #facc15;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -2px;
+}
+
+.timeline-item {
+  padding: 20px 40px;
+  position: relative;
+  width: 50%;
+}
+
+.timeline-item::after {
+  display: none; /* 🔥 This hides the yellow dot */
+}
+
+
+.timeline-item.left {
+  left: 0;
+}
+
+.timeline-item.right {
+  left: 50%;
+}
+
+.content {
+  background-color: #1e293b;
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+  box-shadow: 0 0 15px rgba(250, 204, 21, 0.3);
+  transition: 0.3s;
+}
+
+.content:hover {
+  transform: scale(1.02);
+}
+
+@media screen and (max-width: 768px) {
+  .timeline::after {
+    left: 90px;
+  }
+
+  .timeline-item {
+    width: 100%;
+    padding-left: 120px;
+    padding-right: 25px;
+  }
+
+  .timeline-item.right {
+    left: 0%;
+  }
+
+  .timeline-item::after {
+    left: 80px;
+  }
+}
+
+
+
+
